@@ -1,0 +1,80 @@
+.turfs-section {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.turfs-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.turfs-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.turf-card {
+  width: calc(33.33% - 16px);
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.turf-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.turf-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.turf-info {
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.turf-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+}
+
+.turf-location {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.turf-rating {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+}
+
+/* Responsive Fixes */
+@media (max-width: 900px) {
+  .turf-card {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 600px) {
+  .turf-card {
+    width: 100%;
+  }
+}

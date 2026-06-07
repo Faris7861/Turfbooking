@@ -1,0 +1,68 @@
+.slots-box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.slots-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.slots-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.slot-item {
+  width: 90px;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+}
+
+/* AVAILABLE */
+.slot-available {
+  background: #e8f9ec;
+  color: #0a7a24;
+  border-color: #b8eac3;
+}
+
+/* SELECTED */
+.slot-selected {
+  background: #0a7a24;
+  color: #fff;
+  border-color: #0a7a24;
+}
+
+/* BOOKED */
+.slot-booked {
+  background: #f3f3f3;
+  color: #999;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+
+.book-btn {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.book-btn:disabled {
+  background: #777;
+  cursor: not-allowed;
+}

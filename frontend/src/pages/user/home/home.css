@@ -1,0 +1,24 @@
+.home {
+  width: 100%;
+  height: auto;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Content wrapper so footer stays bottom */
+.home-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sections inside home with padding */
+.home-section {
+  width: 100%;
+  padding: 40px 24px;
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+}

@@ -1,0 +1,30 @@
+.turf-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.turf-main-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.turf-thumbnails {
+  display: flex;
+  gap: 10px;
+}
+
+.turf-thumb-img {
+  width: 100px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.turf-thumb-img:hover {
+  opacity: 1;
+}

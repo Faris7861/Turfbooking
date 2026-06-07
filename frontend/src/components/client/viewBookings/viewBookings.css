@@ -1,0 +1,30 @@
+.view-bookings {
+  padding: 20px;
+}
+
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.booking-time {
+  font-weight: 600;
+}
+
+.booking-user {
+  color: #333;
+}
+
+.booking-status.confirmed {
+  color: green;
+}

@@ -1,0 +1,126 @@
+.slot-backdrop {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(4px);
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.slot-modal {
+  width: 700px;
+  max-height: 100vh;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+}
+
+.slot-header {
+  padding: 14px 18px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.day-row {
+  display: flex;
+  padding: 12px;
+  overflow-x: auto;
+  gap: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.day-item {
+  min-width: 80px;
+  padding: 6px 8px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.day-item.active {
+  background: #111;
+  color: #fff;
+}
+
+.day-name {
+  font-size: 12px;
+}
+
+.day-date {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.time-grid {
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.time-grid > * {
+  flex: 1 1 calc(25% - 8px);
+  box-sizing: border-box;
+}
+
+.time-item {
+  width: calc(25% - 8px);
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 13px;
+  background: #eef2f4;
+  cursor: pointer;
+  user-select: none;
+}
+
+.time-item.selected {
+  background: #111;
+  color: #fff;
+}
+
+.time-item.blocked {
+  background: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.slot-footer {
+  padding: 14px 18px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-btn {
+  padding: 10px 20px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-btn:disabled {
+  background: #777;
+  cursor: not-allowed;
+}
